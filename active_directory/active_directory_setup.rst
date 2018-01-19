@@ -227,6 +227,7 @@ add-users.ps1_ and add-users.csv_
 	user11,nutanix/4u
 	user12,nutanix/4u
 	user13,nutanix/4u
+	user14,nutanix/4u
 	user15,nutanix/4u
 	user16,nutanix/4u
 	user17,nutanix/4u
