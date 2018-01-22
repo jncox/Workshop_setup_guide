@@ -1,12 +1,12 @@
-******************************************************************************
-**Install and Configure Active Directory on Windows 2012R2 Domain Controller**
-******************************************************************************
+**************************************************************************
+Install and Configure Active Directory on Windows 2012R2 Domain Controller
+**************************************************************************
 
 .. contents::
 
 
-**Connectivity Instructions:**
-******************************
+Connectivity Instructions:
+**************************
 
 +------------+--------------------------------------------------------+
 | DC IP      |                                           10.x.x.40    |
@@ -24,8 +24,8 @@ In this guide we will setup a Windows Domain Controller, and configure Active Di
 
 **Note:** You can do either of these depending on if you want to build from scratch or use the one deployed by the HPOC system.
 
-**Step 1a — Deploying the Windows 2012R2 Server from scratch**
-**************************************************************
+Step 1a — Deploying the Windows 2012R2 Server from scratch
+**********************************************************
 
 Do this step if you are deploying from a Widows 2012R2 ISO
 
@@ -50,8 +50,8 @@ Do this step if you are deploying from a Widows 2012R2 ISO
 **OR Do This**
 
 
-**Step 1b — Deploying the Windows 2012R2 Server from Pre-Deployed HPOC Image**
-******************************************************************************
+Step 1b — Deploying the Windows 2012R2 Server from Pre-Deployed HPOC Image
+**************************************************************************
 
 Do this step if you are using the Pre-Deployed Windows 2012R2 VM
 (These Images are deployed if you select Windows VMs during HPOC Reservation Process)
@@ -68,8 +68,8 @@ Do this step if you are using the Pre-Deployed Windows 2012R2 VM
 10. Use the HPOC password as the Administrator password
 
 
-**Step 2 — Configuring Windows Server Settings**
-************************************************
+Step 2 — Configuring Windows Server Settings
+********************************************
 
 In This step we will configure the Windows OS settings we need before we install the AD Role
 
@@ -101,8 +101,8 @@ In This step we will configure the Windows OS settings we need before we install
 8. Restart Computer
 
 
-**Step 3 — Installing Domain Services Role (AD)**
-*************************************************
+Step 3 — Installing Domain Services Role (AD)
+*********************************************
 
 In this step we will be installing Domain Services Role
 
@@ -119,8 +119,8 @@ In this step we will be installing Domain Services Role
 **Note:** Monitor the install, and select **Close** when you see the installation succeeded
 
 
-**Step 4 — Configuring Domain Services Role (AD)**
-**************************************************
+Step 4 — Configuring Domain Services Role (AD)
+**********************************************
 
 In this step we will be configuring Active Directory for use by our Workshop
 
@@ -143,8 +143,8 @@ In this step we will be configuring Active Directory for use by our Workshop
 **Note:** Server will reboot automatically
 
 
-**Step 5 — Adding Workshop Users & Group**
-******************************************
+Step 5 — Adding Workshop Users & Group
+**************************************
 
 In this step we will run a powershell script that will create the "Bootcamp Users" AD group, and user01-user20
 (also adding them to the Bootcamp Users group)
@@ -174,7 +174,7 @@ add-users.ps1_ and add-users.csv_
 	$GroupName = "Bootcamp Users"
 	$OU = "CN=Users, DC=BOOTCAMP,DC=LOCAL"
 
-	NEW-ADGroup -name $GroupName –GroupScope Global
+	NEW-ADGroup -name $GroupName -GroupScope Global
 
 	ForEach($User in $Users){
 	$User.FirstName = $User.FirstName.substring(0,1).toupper()+$User.FirstName.substring(1).tolower()

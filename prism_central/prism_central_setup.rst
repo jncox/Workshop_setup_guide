@@ -1,19 +1,19 @@
-**********************************
-**Configuring HPOC Prism Central**
-**********************************
+******************************
+Configuring HPOC Prism Central
+******************************
 
 .. contents::
 
 
-**This Setup Guide is designed with these assumtpitons**
-********************************************************
+This Setup Guide is designed with these assumtpitons
+****************************************************
 
 1. AOS 5.5.x (or higher)
 2. AHV (for 5.5)
 
 
-**Connectivity Instructions:**
-******************************
+Connectivity Instructions:
+**************************
 
 +--------------------------+------------------------------------------+
 | Prism Central IP         |                             Cluster IP   |
@@ -24,20 +24,20 @@
 +--------------------------+------------------------------------------+
 
 
-**Overview**
-************
+Overview
+********
 
 In this guide we will configure Prism Central for the HPOC you have checked out. This includes SSP and Calm (Apps).
 
 
-**Configure Prism Central for Workshop**
-****************************************
+Configure Prism Central for Workshop
+************************************
 
 We will start by installing prism Central
 
 
-**Step 1 — Install Prism Central**
-**********************************
+Step 1 — Install Prism Central
+******************************
 
 1. Click on **Register or create new** on the Prism Central Widget (On the main Cluster page)
 2. Click on **Deploy** in the "I want to deploy a new Prims Central instance" box
@@ -67,8 +67,8 @@ We will start by installing prism Central
 11. Accept the EULA
 
 
-**Step 2 — Register Prism Central**
-***********************************
+Step 2 — Register Prism Central
+*******************************
 
 1. Go to the Prism Element browser tab
 2. Click on **Register or create new** on the Prism Central Widget (On the main Cluster page)
@@ -87,8 +87,8 @@ We will start by installing prism Central
 6. You should now see **OK** int he Prism Central Widget (On the main Cluster page)
 
 
-**Step 3 — UI Settings**
-************************
+Step 3 — UI Settings
+********************
 
 Change Session Timeout Values
 
@@ -98,8 +98,8 @@ Change Session Timeout Values
 4. Session Timeout override = Allow unlimited
 
 
-**Step 4 — Setup Authentication and Role Mapping**
-**************************************************
+Step 4 — Setup Authentication and Role Mapping
+**********************************************
 
 1. Go To Gear --> Authentication
 2. Select **New Directory**
@@ -139,8 +139,8 @@ Change Session Timeout Values
 10. Log back into Prism Central as admin
 
 
-**Step 5 — Configure Self-Service Admin Management**
-****************************************************
+Step 5 — Configure Self-Service Admin Management
+************************************************
 
 In this section we will configure Self-Service Portal (SSP)
 
@@ -159,8 +159,8 @@ In this section we will configure Self-Service Portal (SSP)
 4. Click **Save**
 
 
-**Step 6 — Enable App Management**
-**********************************
+Step 6 — Enable App Management
+******************************
 
 In this section we will enable the Apps tab (Calm) of Prism Central
 
@@ -173,8 +173,8 @@ In this section we will enable the Apps tab (Calm) of Prism Central
 7. If you see the Calm UI you are done
 
 
-**Step 7 — Create Project for use in Calm**
-*******************************************
+Step 7 — Create Project for use in Calm
+***************************************
 
 In this section will create a project for use with SSP & Calm
 
@@ -198,7 +198,7 @@ In this section will create a project for use with SSP & Calm
 **Note:** If the Users or Group you added are SSP Admins they will not show as group members. This is because they are already admins, and have access.
 
 
-**Step 8 — Go forth and Create / Demo / Build / Have Fun**
-**********************************************************
+Step 8 — Go forth and Create / Demo / Build / Have Fun
+******************************************************
 
 Build Some Blueprints / Applications / or deploy from the Marketplace

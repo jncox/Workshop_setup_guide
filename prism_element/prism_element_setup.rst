@@ -1,20 +1,20 @@
-**********************************
-**Configuring HPOC Prism Element**
-**********************************
+******************************
+Configuring HPOC Prism Element
+******************************
 
 .. contents::
 
 
-**This Setup Guide is designed with these assumptions**
-********************************************************
+This Setup Guide is designed with these assumptions
+***************************************************
 
 1. AOS 5.5.x (or higher)
 2. AHV (for 5.5)
 3. Using 1 HPOC (If using more then one, do the same on both)
 
 
-**Connectivity & HPOC Info:**
-******************************
+Connectivity & HPOC Info:
+*************************
 
 +-------------------------------------+------------------------------------+
 | IP                                  |          Cluster IP                |
@@ -65,28 +65,28 @@
 	Nameserver IP: 10.21.253.10
 
 
-**Overview**
-************
+Overview
+********
 
 In this guide we will configure Prism Element for the HPOC you have checked out. This includes the Storage Containers, User VM Network(s), Image Service, Authentication & Roles.
 
 
-**Configure Prism Element for Workshop**
-*****************************************
+Configure Prism Element for Workshop
+************************************
 
 Start by logging in and accepting the EULA.
 
 
-**Step 1 — Configure Storage Containers**
-*****************************************
+Step 1 — Configure Storage Containers
+*************************************
 
 1. Go to Storage --> Table
 2. Delete the "default-container-xxxxx"
 3. Create a new Storage Container called "Bootcamp"
 
 
-**Step 2 — Setup user VM network**
-**********************************
+Step 2 — Setup user VM network
+******************************
 
 1. Go to VM --> Table
 2. Select "Network Config"
@@ -122,8 +122,8 @@ Start by logging in and accepting the EULA.
 5. Click **Save**
 
 
-**Step 3 — Image Configuration**
-*********************************
+Step 3 — Image Configuration
+****************************
 
 Verify Image Configurations has what you need for your Workshop
 
@@ -133,16 +133,16 @@ Verify Image Configurations has what you need for your Workshop
 4. If you need upload any other ISOs or Images now is a good time to do so
 
 
-**Step 4 — Configure Data Services IP**
-***************************************
+Step 4 — Configure Data Services IP
+***********************************
 
 1. Select the Cluster in the upper left-hand corner
 2. Add the ISCSI Data Services IP = 10.x.x.38
 3. Click **Save**
 
 
-**Step 5 — UI Settings**
-************************
+Step 5 — UI Settings
+********************
 
 Change Session Timeout Values
 
@@ -153,8 +153,8 @@ Change Session Timeout Values
 5. Click **Save**
 
 
-**Step 6 — Setup Authentication and Role Mapping (If Active Directory is needed for your Workshop)**
-****************************************************************************************************
+Step 6 — Setup Authentication and Role Mapping (If Active Directory is needed for your Workshop)
+************************************************************************************************
 
 **Note:** Setup & Configure a Domain Controller (Active-Directory_ ) before completing this section.
 
